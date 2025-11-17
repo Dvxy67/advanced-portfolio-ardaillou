@@ -1,3 +1,9 @@
+.navbar-brand:focus,
+.nav-link:focus,
+.btn:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
 
 .card-img-top {
     width: 100%;
@@ -58,5 +64,23 @@
     
     .project-image-large {
         height: 200px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+@media (prefers-contrast: high) {
+    .bg-primary {
+        background-color: #000000 !important;
+    }
+    .text-primary {
+        color: #000000 !important;
     }
 }
